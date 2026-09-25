@@ -1,155 +1,1007 @@
-ALAREX Design & Manufacturing 
-Industtrial Supply
-About Us 
-Services 
-Capabilities 
-Contact 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alarex Design and Manufacturing</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
+<title>Alarex Design & Manufacturing | Ontario, Canada</title>
+
+<meta name="description" content="Alarex Design and Manufacturing provides mechanical design, CAD drafting, manufacturing support and industrial supply solutions in Ontario, Canada.">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    color:#263442;
+    background:#ffffff;
+    line-height:1.6;
+}
+
+/* ================= NAVIGATION ================= */
+
+nav{
+    background:#071a2c;
+    min-height:78px;
+    padding:0 7%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 3px 15px rgba(0,0,0,.2);
+}
+
+.brand{
+    color:#fff;
+    font-size:27px;
+    font-weight:800;
+    letter-spacing:2px;
+}
+
+.brand span{
+    color:#28a8e8;
+}
+
+.brand small{
+    display:block;
+    font-size:9px;
+    letter-spacing:2px;
+    color:#9db2c5;
+    margin-top:-3px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:28px;
+    align-items:center;
+}
+
+nav a{
+    color:#e7edf3;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:600;
+    transition:.2s;
+}
+
+nav a:hover{
+    color:#38b6f4;
+}
+
+.quote-nav{
+    background:#168ecf;
+    padding:11px 18px;
+    border-radius:4px;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:650px;
+    display:flex;
+    align-items:center;
+    padding:90px 8%;
+    color:#fff;
+
+    background:
+    linear-gradient(90deg,
+    rgba(4,20,35,.97) 0%,
+    rgba(5,27,46,.92) 48%,
+    rgba(7,36,60,.82) 100%),
+    linear-gradient(135deg,#071827,#16476c);
+}
+
+.hero-content{
+    max-width:850px;
+}
+
+.eyebrow{
+    color:#38b6f4;
+    text-transform:uppercase;
+    letter-spacing:3px;
+    font-weight:bold;
+    font-size:14px;
+    margin-bottom:18px;
+}
+
+.hero h1{
+    font-size:62px;
+    line-height:1.08;
+    max-width:850px;
+    margin-bottom:24px;
+}
+
+.hero h1 span{
+    color:#38b6f4;
+}
+
+.hero p{
+    max-width:720px;
+    font-size:20px;
+    color:#d3dee7;
+    margin-bottom:35px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:14px;
+    flex-wrap:wrap;
+}
+
+.button{
+    display:inline-block;
+    text-decoration:none;
+    padding:14px 26px;
+    border-radius:4px;
+    font-weight:bold;
+    transition:.25s;
+}
+
+.primary{
+    background:#168ecf;
+    color:white;
+}
+
+.primary:hover{
+    background:#0876b1;
+    transform:translateY(-2px);
+}
+
+.secondary{
+    border:2px solid #d8e5ef;
+    color:white;
+}
+
+.secondary:hover{
+    background:white;
+    color:#071a2c;
+}
+
+/* ================= INFO BAR ================= */
+
+.info-bar{
+    background:#102d45;
+    color:white;
+    padding:25px 8%;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    text-align:center;
+}
+
+.info-item{
+    padding:5px 20px;
+    border-right:1px solid #365269;
+}
+
+.info-item:last-child{
+    border-right:none;
+}
+
+.info-item strong{
+    display:block;
+    font-size:17px;
+}
+
+.info-item span{
+    color:#aebfcd;
+    font-size:13px;
+}
+
+/* ================= GENERAL ================= */
+
+section{
+    padding:90px 8%;
+}
+
+.section-heading{
+    max-width:760px;
+    margin:0 auto 55px;
+    text-align:center;
+}
+
+.section-label{
+    color:#168ecf;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-size:13px;
+    font-weight:bold;
+}
+
+.section-heading h2{
+    color:#102a40;
+    font-size:40px;
+    margin:8px 0 13px;
+}
+
+.section-heading p{
+    color:#657584;
+}
+
+/* ================= ABOUT ================= */
+
+.about{
+    background:#f5f8fa;
+}
+
+.about-container{
+    max-width:1150px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1.2fr .8fr;
+    gap:70px;
+    align-items:center;
+}
+
+.about-text h2{
+    font-size:40px;
+    color:#102a40;
+    margin-bottom:20px;
+}
+
+.about-text p{
+    color:#5e6e7c;
+    margin-bottom:17px;
+}
+
+.about-panel{
+    background:#09233a;
+    color:white;
+    padding:45px;
+    border-radius:6px;
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+.about-panel h3{
+    color:#45baf2;
+    font-size:25px;
+    margin-bottom:18px;
+}
+
+.about-panel p{
+    color:#d2dee8;
+    margin-bottom:15px;
+}
+
+/* ================= SERVICES ================= */
+
+.services-grid{
+    max-width:1180px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.service{
+    position:relative;
+    background:#fff;
+    border:1px solid #e0e6eb;
+    border-radius:7px;
+    padding:40px 32px;
+    min-height:300px;
+    box-shadow:0 8px 25px rgba(12,40,64,.07);
+    transition:.3s;
+    overflow:hidden;
+}
+
+.service:before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:5px;
+    background:#168ecf;
+}
+
+.service:hover{
+    transform:translateY(-8px);
+    box-shadow:0 16px 35px rgba(12,40,64,.15);
+}
+
+.service-number{
+    font-size:42px;
+    font-weight:bold;
+    color:#e5f3fa;
+    margin-bottom:10px;
+}
+
+.service h3{
+    color:#102a40;
+    font-size:23px;
+    margin-bottom:15px;
+}
+
+.service p{
+    color:#667684;
+}
+
+/* ================= CAPABILITIES ================= */
+
+.capabilities{
+    background:#071c2f;
+    color:white;
+}
+
+.capabilities .section-heading h2{
+    color:white;
+}
+
+.capabilities .section-heading p{
+    color:#aebdca;
+}
+
+.capabilities-grid{
+    max-width:1050px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:0 60px;
+}
+
+.capability{
+    padding:19px 5px;
+    border-bottom:1px solid #294257;
+    font-size:17px;
+    color:#e0e8ef;
+}
+
+.capability::before{
+    content:"✓";
+    display:inline-block;
+    margin-right:14px;
+    color:#38b6f4;
+    font-weight:bold;
+}
+
+/* ================= INDUSTRIES ================= */
+
+.industries{
+    background:#f5f8fa;
+}
+
+.industry-grid{
+    max-width:1100px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.industry{
+    background:white;
+    min-height:140px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    border:1px solid #dde5eb;
+    border-radius:6px;
+    padding:25px;
+    color:#17364f;
+    font-weight:bold;
+    font-size:17px;
+    box-shadow:0 5px 15px rgba(0,0,0,.04);
+}
+
+/* ================= PROCESS ================= */
+
+.process-grid{
+    max-width:1100px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.process{
+    text-align:center;
+}
+
+.process-number{
+    width:55px;
+    height:55px;
+    margin:0 auto 17px;
+    border-radius:50%;
+    background:#168ecf;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:bold;
+    font-size:20px;
+}
+
+.process h3{
+    color:#102a40;
+    margin-bottom:8px;
+}
+
+.process p{
+    color:#6a7986;
+    font-size:14px;
+}
+
+/* ================= CTA ================= */
+
+.cta{
+    padding:70px 8%;
+    background:linear-gradient(120deg,#087ab8,#0d9ada);
+    color:white;
+    text-align:center;
+}
+
+.cta h2{
+    font-size:40px;
+    margin-bottom:12px;
+}
+
+.cta p{
+    font-size:18px;
+    margin-bottom:28px;
+}
+
+.cta .button{
+    background:white;
+    color:#0b304b;
+}
+
+/* ================= CONTACT ================= */
+
+.contact-container{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+}
+
+.contact-card{
+    background:#f5f8fa;
+    border:1px solid #dde5eb;
+    border-radius:8px;
+    padding:45px;
+}
+
+.contact-card h3{
+    font-size:27px;
+    color:#102a40;
+    margin-bottom:18px;
+}
+
+.contact-card p{
+    margin:9px 0;
+    color:#5e6d79;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#051522;
+    color:#9fb0be;
+    padding:35px 8%;
+    text-align:center;
+    font-size:14px;
+}
+
+footer strong{
+    color:white;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:850px){
+
+    nav{
+        padding:15px 5%;
+        flex-direction:column;
+        gap:13px;
     }
 
-    body {
-      font-family: Arial, sans-serif;
-      color: #222;
-      line-height: 1.6;
+    nav ul{
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:12px;
     }
 
-    header {
-      background: #111827;
-      color: white;
-      padding: 20px 8%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    .hero{
+        min-height:570px;
+        padding:70px 7%;
     }
 
-    header h2 {
-      font-size: 24px;
+    .hero h1{
+        font-size:42px;
     }
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 25px;
+    .hero p{
+        font-size:17px;
     }
 
-    .hero {
-      background: #f3f4f6;
-      padding: 110px 8%;
-      text-align: center;
+    .info-bar{
+        grid-template-columns:1fr;
     }
 
-    .hero h1 {
-      font-size: 46px;
-      margin-bottom: 15px;
+    .info-item{
+        border-right:none;
+        border-bottom:1px solid #365269;
+        padding:15px;
     }
 
-    .hero p {
-      font-size: 21px;
-      color: #555;
+    .about-container,
+    .services-grid,
+    .capabilities-grid,
+    .industry-grid,
+    .process-grid{
+        grid-template-columns:1fr;
     }
 
-    section {
-      padding: 70px 8%;
-      max-width: 1200px;
-      margin: auto;
+    section{
+        padding:70px 7%;
     }
 
-    h2 {
-      margin-bottom: 25px;
+    .section-heading h2,
+    .about-text h2,
+    .cta h2{
+        font-size:32px;
     }
+}
 
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
-
-    .service {
-      padding: 25px;
-      background: #f5f5f5;
-      border-radius: 8px;
-    }
-
-    footer {
-      background: #111827;
-      color: white;
-      text-align: center;
-      padding: 30px;
-      margin-top: 40px;
-    }
-  </style>
+</style>
 </head>
 
 <body>
 
-<header>
-  <h2>ALAREX</h2>
+<!-- NAVIGATION -->
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<nav>
+
+    <div class="brand">
+        ALAR<span>EX</span>
+        <small>DESIGN & MANUFACTURING</small>
+    </div>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#capabilities">Capabilities</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a class="quote-nav" href="#contact">Request a Quote</a></li>
+    </ul>
+
+</nav>
+
+
+<!-- HERO -->
+
+<header class="hero" id="home">
+
+    <div class="hero-content">
+
+        <div class="eyebrow">
+            Mechanical • Manufacturing • Industrial
+        </div>
+
+        <h1>
+            Engineering Ideas Into
+            <span>Practical Solutions.</span>
+        </h1>
+
+        <p>
+            Mechanical design, CAD drafting, manufacturing support
+            and industrial supply solutions for engineering and
+            industrial applications.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#services" class="button primary">
+                Explore Our Services
+            </a>
+
+            <a href="#contact" class="button secondary">
+                Request a Quote
+            </a>
+
+        </div>
+
+    </div>
+
 </header>
 
-<div class="hero">
-  <h1>Alarex Design and Manufacturing</h1>
-  <p>Mechanical Design • Manufacturing • Industrial Supply</p>
+
+<!-- INFO BAR -->
+
+<div class="info-bar">
+
+    <div class="info-item">
+        <strong>Mechanical Design</strong>
+        <span>CAD • Drawings • Components</span>
+    </div>
+
+    <div class="info-item">
+        <strong>Manufacturing Support</strong>
+        <span>Production • Technical Solutions</span>
+    </div>
+
+    <div class="info-item">
+        <strong>Industrial Supply</strong>
+        <span>Components • Project Requirements</span>
+    </div>
+
 </div>
 
-<section id="about">
-  <h2>About Us</h2>
 
-  <p>
-    Alarex Design and Manufacturing provides mechanical design,
-    manufacturing support and industrial supply solutions for
-    engineering and industrial applications.
-  </p>
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+    <div class="about-container">
+
+        <div class="about-text">
+
+            <span class="section-label">Who We Are</span>
+
+            <h2>
+                Design. Manufacturing. Industrial Solutions.
+            </h2>
+
+            <p>
+                Alarex Design and Manufacturing is an Ontario-based
+                company providing mechanical design, manufacturing
+                support and industrial supply solutions.
+            </p>
+
+            <p>
+                We support projects from concept and technical
+                drawings through manufacturing and component
+                sourcing.
+            </p>
+
+            <p>
+                Our goal is simple: provide practical, reliable and
+                efficient technical solutions based on the needs of
+                each project.
+            </p>
+
+        </div>
+
+
+        <div class="about-panel">
+
+            <h3>Built Around Your Project</h3>
+
+            <p>
+                Whether you require a mechanical component,
+                CAD drawing, manufacturing support or an industrial
+                product, we work to understand the application first.
+            </p>
+
+            <p>
+                Our flexible approach allows us to support both
+                individual technical requirements and larger
+                industrial projects.
+            </p>
+
+            <p>
+                <strong>Ontario, Canada</strong>
+            </p>
+
+        </div>
+
+    </div>
+
 </section>
+
+
+<!-- SERVICES -->
 
 <section id="services">
-  <h2>Our Services</h2>
 
-  <div class="services">
+    <div class="section-heading">
 
-    <div class="service">
-      <h3>Mechanical Design</h3>
-      <p>3D CAD modelling, technical drawings and mechanical design support.</p>
+        <span class="section-label">What We Do</span>
+
+        <h2>Our Services</h2>
+
+        <p>
+            Practical engineering and technical support for
+            industrial and manufacturing applications.
+        </p>
+
     </div>
 
-    <div class="service">
-      <h3>Manufacturing</h3>
-      <p>Manufacturing support, component development and technical solutions.</p>
+
+    <div class="services-grid">
+
+        <div class="service">
+
+            <div class="service-number">01</div>
+
+            <h3>Mechanical Design & CAD</h3>
+
+            <p>
+                3D CAD modelling, mechanical component design,
+                assemblies, technical drawings and design support
+                for manufacturing and industrial applications.
+            </p>
+
+        </div>
+
+
+        <div class="service">
+
+            <div class="service-number">02</div>
+
+            <h3>Manufacturing Support</h3>
+
+            <p>
+                Component development, production support,
+                drawing interpretation, manufacturing assistance
+                and practical technical solutions.
+            </p>
+
+        </div>
+
+
+        <div class="service">
+
+            <div class="service-number">03</div>
+
+            <h3>Industrial Supply</h3>
+
+            <p>
+                Support with sourcing mechanical components,
+                industrial products and technical equipment
+                according to project requirements.
+            </p>
+
+        </div>
+
     </div>
 
-    <div class="service">
-      <h3>Industrial Supply</h3>
-      <p>Industrial components and engineering products for project requirements.</p>
-    </div>
-
-  </div>
 </section>
+
+
+<!-- CAPABILITIES -->
+
+<section class="capabilities" id="capabilities">
+
+    <div class="section-heading">
+
+        <span class="section-label">Technical Expertise</span>
+
+        <h2>Capabilities</h2>
+
+        <p>
+            Supporting engineering projects from design
+            through manufacturing and implementation.
+        </p>
+
+    </div>
+
+
+    <div class="capabilities-grid">
+
+        <div class="capability">3D CAD Modelling</div>
+
+        <div class="capability">Mechanical Technical Drawings</div>
+
+        <div class="capability">Component & Assembly Design</div>
+
+        <div class="capability">Manufacturing Support</div>
+
+        <div class="capability">Design for Manufacturing</div>
+
+        <div class="capability">Industrial Component Sourcing</div>
+
+        <div class="capability">Technical Documentation</div>
+
+        <div class="capability">Project Technical Support</div>
+
+    </div>
+
+</section>
+
+
+<!-- INDUSTRIES -->
+
+<section class="industries">
+
+    <div class="section-heading">
+
+        <span class="section-label">Applications</span>
+
+        <h2>Industries We Support</h2>
+
+        <p>
+            Flexible technical support across a range of
+            industrial applications.
+        </p>
+
+    </div>
+
+
+    <div class="industry-grid">
+
+        <div class="industry">
+            Manufacturing
+        </div>
+
+        <div class="industry">
+            Industrial Equipment
+        </div>
+
+        <div class="industry">
+            Automation
+        </div>
+
+        <div class="industry">
+            Mechanical Systems
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PROCESS -->
+
+<section>
+
+    <div class="section-heading">
+
+        <span class="section-label">How We Work</span>
+
+        <h2>From Requirement to Solution</h2>
+
+    </div>
+
+
+    <div class="process-grid">
+
+        <div class="process">
+
+            <div class="process-number">1</div>
+
+            <h3>Requirement</h3>
+
+            <p>
+                We review your project,
+                application and technical needs.
+            </p>
+
+        </div>
+
+
+        <div class="process">
+
+            <div class="process-number">2</div>
+
+            <h3>Design</h3>
+
+            <p>
+                We develop the appropriate
+                technical or design solution.
+            </p>
+
+        </div>
+
+
+        <div class="process">
+
+            <div class="process-number">3</div>
+
+            <h3>Manufacturing</h3>
+
+            <p>
+                We support production,
+                sourcing and implementation.
+            </p>
+
+        </div>
+
+
+        <div class="process">
+
+            <div class="process-number">4</div>
+
+            <h3>Delivery</h3>
+
+            <p>
+                The project is completed according
+                to the agreed requirements.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+    <h2>Have a Project in Mind?</h2>
+
+    <p>
+        Tell us about your design, manufacturing or
+        industrial supply requirements.
+    </p>
+
+    <a href="#contact" class="button">
+        Request a Quote
+    </a>
+
+</section>
+
+
+<!-- CONTACT -->
 
 <section id="contact">
-  <h2>Contact</h2>
 
-  <p>Alarex Design and Manufacturing</p>
-  <p>Ontario, Canada</p>
+    <div class="section-heading">
+
+        <span class="section-label">Get In Touch</span>
+
+        <h2>Contact Alarex</h2>
+
+        <p>
+            Contact us to discuss your project
+            or request a quotation.
+        </p>
+
+    </div>
+
+
+    <div class="contact-container">
+
+        <div class="contact-card">
+
+            <h3>Alarex Design and Manufacturing</h3>
+
+            <p>
+                <strong>Location:</strong>
+                Ontario, Canada
+            </p>
+
+            <p>
+                <strong>Services:</strong>
+                Mechanical Design • Manufacturing • Industrial Supply
+            </p>
+
+            <p>
+                <strong>Email:</strong>
+                Company email will be added here
+            </p>
+
+        </div>
+
+    </div>
+
 </section>
 
+
+<!-- FOOTER -->
+
 <footer>
-  © 2026 Alarex Design and Manufacturing. All Rights Reserved.
+
+    © 2026
+    <strong>Alarex Design and Manufacturing</strong>
+    • Ontario, Canada
+    • All Rights Reserved.
+
 </footer>
 
 </body>
